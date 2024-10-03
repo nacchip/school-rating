@@ -73,13 +73,11 @@
         <form id="evaluationForm">
             <label for="teacher">Как вы оцениваете Ильину Татьяну Викторовну?</label>
 <br>
-            <select id="rating">
-                <option value="1">1 (Плохо)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Отлично)</option>
-            </select>
+<div class="stars">
+  <input type="radio" id="star1" name="rating" value="1" /><input type="radio" id="star2" name="rating" value="2" /><input type="radio" id="star3" name="rating" value="3" /><input type="radio" id="star4" name="rating" value="4" /><input type="radio" id="star5" name="rating" value="5" />
+  
+  <label for="star1" aria-label="Banana">1 star</label><label for="star2">2 stars</label><label for="star3">3 stars</label><label for="star4">4 stars</label><label for="star5">5 stars</label>
+</div>
 
             <label for="comment">Комментарий:</label>
             <textarea id="comment" placeholder="Оставьте свой комментарий..."></textarea>
